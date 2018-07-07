@@ -6,7 +6,10 @@
 puts "Hi, What's your name?"
 name = gets.chomp
 puts "Hey #{name}, How old are you?"
+# get user info
 age = gets.chomp.to_i
+
+# conversion days - minutes - seconds - years
 seconds_in_minute = 60
 minutes_in_hour = 60
 hours_in_day = 24
@@ -15,6 +18,8 @@ seconds_day = seconds_in_minute * minutes_in_hour * hours_in_day
 seconds_year = seconds_day * days_in_year
 seconds_user_age = age * seconds_year
 days_old = age * days_in_year
+
+# planets conversion
 mercury = 87.97
 venus = 224.7
 mars = 1.88 * days_in_year
@@ -24,7 +29,7 @@ uranus = 84.01 * days_in_year
 neptune = 164.79 * days_in_year
 pluto = 248.59 * days_in_year
 
-
+# outputs
 puts "#{name} you are #{seconds_user_age} seconds or #{days_old} days old"
 puts "Your age on Merucy is #{sprintf('%.2f', days_old / mercury)} years old."
 puts "Your age on Jupiter is #{sprintf('%.2f', days_old / jupiter)} years old."
